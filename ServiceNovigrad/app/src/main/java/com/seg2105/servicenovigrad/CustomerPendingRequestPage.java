@@ -1,0 +1,117 @@
+package com.seg2105.servicenovigrad;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Vibrator;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.RatingBar;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+
+public class CustomerPendingRequestPage extends AppCompatActivity {
+    private final int normalVibrateValue = 10;
+    private final int lowVibrateValue = normalVibrateValue / 2;
+    FirebaseDatabase firebase;
+    DatabaseReference requestsRef;
+    private String customerUsername;
+    RequestsList requestsAdapter;
+    ListView requestsListView;
+    ArrayList<String> requests;
+    String branchName;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_customer_pending_requests);
+
+        customerUsername = getIntent().getStringExtra("EXTRA_USERNAME");
+        requestsListView = (ListView) findViewById(R.id.requestsListView);
+
+        firebase = FirebaseDatabase.getInstance();
+        requestsRef = firebase.getReference("Requests");
+        requests = new ArrayList<>();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        requestsRef.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                requestsAdapter = new RequestsList(CustomerPendingRequestPage.this, requests);
+                requestsListView.setAdapter(requestsAdapter);
+
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()){
+                    if (postSnapshot.child("customerUsername").getValue().toString().equals(customerUsername)) {
+                        String requestNumber = postSnapshot.getKey();
+                        branchName = postSnapshot.child("branchName").getValue().toString();
+
+                        requests.add("#" + requestNumber);
+                    }
+                }
+
+                requestsListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                    @Override
+                    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                        vb.vibrate(lowVibrateValue);
+
+                        String requestNumber = String.valueOf(requests.get(i).split("#")[1]);
+                        cancelRequest(requestNumber);
+
+                        return true;
+                    }
+                });
+
+                requestsRef.removeEventListener(this);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {}
+        });
+    }
+
+    public void cancelRequest(final String requestNumber) {
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.customer_cancel_request_dialog, null);
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        dialogBuilder.setView(dialogView);
+
+        final Button cancelRequestButton = (Button) dialogView.findViewById(R.id.cancelRequestButton);
+        final AlertDialog dialog = dialogBuilder.create();
+        dialog.show();
+
+        cancelRequestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                vb.vibrate(normalVibrateValue);
+
+                Customer customer = new Customer();
+                customer.cancelRequest(requestNumber);
+
+                Toast.makeText(CustomerPendingRequestPage.this, "Successfully canceled your request",
+                        Toast.LENGTH_SHORT).show();
+
+                dialog.dismiss();
+            }
+        });
+    }
+}

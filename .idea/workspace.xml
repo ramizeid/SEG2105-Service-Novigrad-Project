@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee838be8-f00b-4c4c-af8c-aae5e6dd2936" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ServiceNovigrad/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceNovigrad/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iO2qUQJvgor3pYLTLHJ3NENUIg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee838be8-f00b-4c4c-af8c-aae5e6dd2936" name="Default Changelist" comment="" />
+      <created>1601764508265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601764508265</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1368" y="178" key="#Project_Structure" timestamp="1605851906604">
+      <screen x="-1920" y="0" width="1920" height="1030" />
+    </state>
+    <state x="-1368" y="178" key="#Project_Structure/-1920.0.1920.1030/1920.0.1920.1040/0.0.1536.824@-1920.0.1920.1030" timestamp="1605851906604" />
+    <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605851994396">
+      <screen x="-1920" y="0" width="1920" height="1030" />
+    </state>
+    <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1030/0.0.1536.824/1920.0.1920.1040@-1920.0.1920.1030" timestamp="1602778440787" />
+    <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1030/1920.0.1920.1040/0.0.1536.824@-1920.0.1920.1030" timestamp="1605851994396" />
+    <state x="592" y="231" key="FileChooserDialogImpl" timestamp="1605998923626">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.824/1920.0.1920.1040@-1920.0.1920.1030" timestamp="1602778455059" />
+    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1030/1920.0.1920.1040/0.0.1536.824@-1920.0.1920.1030" timestamp="1605852005760" />
+    <state x="592" y="231" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605998923626" />
+    <state width="745" height="181" key="GridCell.Tab.0.bottom" timestamp="1605998912171">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="745" height="181" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1605998912171" />
+    <state width="745" height="181" key="GridCell.Tab.0.center" timestamp="1605998912171">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="745" height="181" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1605998912171" />
+    <state width="745" height="181" key="GridCell.Tab.0.left" timestamp="1605998912171">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="745" height="181" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1605998912171" />
+    <state width="745" height="181" key="GridCell.Tab.0.right" timestamp="1605998912171">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="745" height="181" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1605998912171" />
+  </component>
+</project>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seg2105.servicenovigrad">
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:configChanges="orientation|screenSize"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UserRegistration"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".WelcomePage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".AdminWelcomePage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".AdminServicesPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".AdminAccountsPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".EmployeeWelcomePage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".EmployeeServicesPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".EmployeeBranchProfilePage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".EmployeeBranchHoursPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".EmployeeRequestsPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".CustomerWelcomePage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".CustomerRequestServicesPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".CustomerPendingRequestPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".CustomerPreviousRequestPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".CustomerBranchInformationPage"
+            android:label="@string/app_name">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>

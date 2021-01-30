@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/BranchNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editServiceNamePlainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/adminPageServiceDialogName"
+            android:inputType="textPersonName" />
+
+        <CheckBox
+            android:id="@+id/dateOfBirthCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dateOfBirthCheckBoxName" />
+
+        <CheckBox
+            android:id="@+id/addressCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/addressCheckBoxName" />
+
+        <CheckBox
+            android:id="@+id/typeOfLicenseCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/typeOfLicenseCheckBoxName" />
+
+        <CheckBox
+            android:id="@+id/proofOfResidenceCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/proofOfResidenceCheckBoxName" />
+
+        <CheckBox
+            android:id="@+id/proofOfStatusCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/proofOfStatusCheckBoxName" />
+
+        <CheckBox
+            android:id="@+id/photoProofCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/photoProofCheckBoxName" />
+
+        <EditText
+            android:id="@+id/editPriceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/priceDialog"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/BranchNameLayout">
+
+        <Button
+            android:id="@+id/serviceCreationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adminPageServiceAddButton" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

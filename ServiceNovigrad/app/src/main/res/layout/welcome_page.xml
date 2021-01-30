@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/welcomeText"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcomeNameText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/julius_sans_one"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/signedRoleText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:fontFamily="@font/julius_sans_one"
+            android:gravity="center"
+            android:text="@string/signedRole"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

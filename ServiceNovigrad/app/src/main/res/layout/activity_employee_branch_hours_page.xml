@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0E3E1E1">
+
+    <LinearLayout
+        android:id="@+id/MainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+
+        <LinearLayout
+            android:id="@+id/TitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/crete_round"
+                android:gravity="center"
+                android:text="@string/employeeBranchHoursTitle"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <ScrollView
+            android:id="@+id/DaysScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/admin_services_border">
+
+            <LinearLayout
+                android:id="@+id/DaysLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/MondayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/mondayTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchHoursMondayTitle"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/mondayHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchDefaultHours"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/mondayOpenSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/capriola"
+                        android:text="@string/employeeBranchOpenSwitch"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/mondaySetHoursButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/custom_rounded_corners_admin_services_add_button"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/employeeBranchHoursSetHours"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--------------------------------" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/TuesdayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tuesdayTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchHoursTuesdayTitle"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tuesdayHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchDefaultHours"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/tuesdayOpenSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:text="@string/employeeBranchOpenSwitch"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/tuesdaySetHoursButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_corners_admin_services_add_button"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/employeeBranchHoursSetHours"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--------------------------------" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/WednesdayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/wednesdayTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchHoursWednesdayTitle"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/wednesdayHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchDefaultHours"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/wednesdayOpenSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:text="@string/employeeBranchOpenSwitch"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/wednesdaySetHoursButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_corners_admin_services_add_button"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/employeeBranchHoursSetHours"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--------------------------------" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ThursdayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/thursdayTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchHoursThursdayTitle"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/thursdayHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchDefaultHours"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/thursdayOpenSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:text="@string/employeeBranchOpenSwitch"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/thursdaySetHoursButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_corners_admin_services_add_button"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/employeeBranchHoursSetHours"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--------------------------------" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/FridayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/fridayTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchHoursFridayTitle"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/fridayHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchDefaultHours"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/fridayOpenSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:text="@string/employeeBranchOpenSwitch"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/fridaySetHoursButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_corners_admin_services_add_button"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/employeeBranchHoursSetHours"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--------------------------------" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/SaturdayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/saturdayTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchHoursSaturdayTitle"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/saturdayHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchDefaultHours"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/saturdayOpenSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:text="@string/employeeBranchOpenSwitch"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/saturdaySetHoursButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_corners_admin_services_add_button"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/employeeBranchHoursSetHours"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--------------------------------" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7.5dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/SundayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/sundayTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchHoursSundayTitle"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/sundayHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="@string/employeeBranchDefaultHours"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/sundayOpenSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/capriola"
+                        android:text="@string/employeeBranchOpenSwitch"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/sundaySetHoursButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_corners_admin_services_add_button"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/employeeBranchHoursSetHours"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

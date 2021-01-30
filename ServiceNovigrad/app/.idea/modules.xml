@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Service Novigrad-app.iml" filepath="$PROJECT_DIR$/.idea/modules/Service Novigrad-app.iml" group="Service Novigrad/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1282390601/ServiceNovigrad-Service_Novigrad.iml" filepath="$PROJECT_DIR$/.idea/modules/-1282390601/ServiceNovigrad-Service_Novigrad.iml" group="Service_Novigrad" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1697704090/Service_Novigrad.iml" filepath="$PROJECT_DIR$/.idea/modules/1697704090/Service_Novigrad.iml" group="Service_Novigrad" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="Service Novigrad/app" />
+    </modules>
+  </component>
+</project>

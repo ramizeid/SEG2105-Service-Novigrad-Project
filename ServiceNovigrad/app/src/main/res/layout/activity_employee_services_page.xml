@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D0E3E1E1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp" />
+
+                <LinearLayout
+                    android:id="@+id/TitleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/crete_round"
+                        android:gravity="center"
+                        android:text="@string/employeeServicesPageTitle"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/ServicesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/servicesAtBranchListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/admin_services_border" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/instructionsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/serviceHelpTextLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/serviceHelpText"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/AddButtonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/addServiceButton"
+                        android:layout_width="250dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_corners_admin_accounts_button"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="@string/adminPageServiceAddButton"
+                        android:textAllCaps="true"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:id="@+id/TitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/crete_round"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/customerBranchInformationPageTitle"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:id="@+id/BranchInformationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/CustomerBranchNameTitleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/customerBranchNameTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/customerBranchNameTextBox"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/CustomerBranchNameTextViewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/customerBranchNameInformationText"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_editview"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/CustomerAddressTitleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/customerAddressTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/customerAddressTextBox"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/CustomerAddressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/customerBranchAddressInformationText"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_rounded_editview"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CustomerBranchRatingTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/customerBranchRatingTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customerBranchRatingTextBox"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CustomerBranchRatingLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:foregroundGravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize=".1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <ScrollView
+                android:id="@+id/DailyHoursScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/admin_services_border">
+
+                <LinearLayout
+                    android:id="@+id/DailyHoursLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/customerBranchHoursInformationTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/customerBranchHoursInformationTitle"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/MondayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerMondayTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:text="@string/employeeBranchHoursMondayTitle"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/customerMondayHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/TuesdayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerTuesdayTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:text="@string/employeeBranchHoursTuesdayTitle"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/customerTuesdayHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/WednesdayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerWednesdayTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:text="@string/employeeBranchHoursWednesdayTitle"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/customerWednesdayHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/ThursdayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerThursdayTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:text="@string/employeeBranchHoursThursdayTitle"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/customerThursdayHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/FridayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerFridayTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:text="@string/employeeBranchHoursFridayTitle"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/customerFridayHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/SaturdayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerSaturdayTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:text="@string/employeeBranchHoursSaturdayTitle"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/customerSaturdayHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/SundayLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerSundayTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:text="@string/employeeBranchHoursSundayTitle"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/customerSundayHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:id="@+id/SendRequestsButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/sendRequestButton"
+                    android:layout_width="250dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_rounded_corners_admin_accounts_button"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/customerSendRequestButton"
+                    android:textAllCaps="true"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
