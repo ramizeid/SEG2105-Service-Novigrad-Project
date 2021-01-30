@@ -3,9 +3,13 @@
 ---------------------------------------------
 
 • Developed an Android application as a University project that simulates a system like Service Ontario
+
 • Connected the system to a Firebase database that keeps track of all of the necessary data for the application to run as intended
+
 • Customer accounts have the ability to order services such as the renewal of a driver's license, whereas branch employee accounts are able to update their branch profiles, offer new services & keep track of the customers' requests
+
 • Administrator accounts can keep track of the available accounts on the system as well as create & delete services
+
 • Developed a UML design for the system
 
 ---------------------------------------------
